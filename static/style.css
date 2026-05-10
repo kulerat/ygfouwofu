@@ -1,0 +1,62 @@
+h1{
+    color:purple;
+    text-align:center;
+}
+p{
+    color:blue;
+    text-align:center;
+}
+body{
+    background-color:lightgray;
+}
+
+#chat {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#messages li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#form {
+    display: flex;
+}
+
+#input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkpurple;
+}
+
