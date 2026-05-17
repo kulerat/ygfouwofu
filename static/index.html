@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROBOCHAT</title>
+    <title>ROBOCHAT - User Chat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>ROBOCHAT</h1>
-    <p>Welcome to ROBOCHAT!</p>
-    
+    <p>Чат для спілкування між користувачами</p>
+    <div id="name-panel">
+        <label for="name-input">Никнейм:</label>
+        <input id="name-input" type="text" placeholder="Придумай имя..." />
+        <button id="set-name" type="button">Установить имя</button>
+        <button id="random-name" type="button">Случайное имя</button>
+        <div id="name-error"></div>
+    </div>
+    <p id="my-name">Ваше имя: <span>не задано</span></p>
     <div id="chat">
+        <div id="theme-switcher">
+            <label>
+                <input id="theme-toggle" type="checkbox" />
+                Темная тема
+            </label>
+        </div>
         <ul id="messages"></ul>
-        <form id="form" action="">
-            <input id="input" autocomplete="off" /><button>Send</button>
-            
+        <form id="form">
+            <input id="input" type="text" autocomplete="off" placeholder="Напиши повідомлення..." />
+            <button type="submit">Відправити</button>
         </form>
     </div>
   
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="/socket.io/socket.io.js"></script>
-<script src="script.js"></script>
-</html> 
+</html>
